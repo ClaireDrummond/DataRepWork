@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8?>
+# Start the library_data
+<library_data>
+    # Add a category for Technical Books
+	<category name="Technical Books">
+    
+        <books>
+            <title>Science101</title>
+            <isbn>3267</isbn>
+            <author>Joe_Murphy</author>
+        </books>
+
+        <books>
+		<title>Engineering101</title>
+		<isbn>6585</isbn>
+		<author>Deirdre_Gregan</author>
+        </books>
+    </category>
+
+    # Add a category for Cookery Books
+
+    <category name="Cookery Books">
+	    <books>
+            <title>Baking101</title>
+            <isbn>2315</isbn>
+            <author>Sarah_Greene</author>
+        </books>
+
+        <books>
+            <title>MeatDishes</title>
+            <isbn>2776</isbn>
+            <author>Rachel_Allen</author>
+        </books>
+    </category>   
+
+</library_data>
