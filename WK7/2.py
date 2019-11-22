@@ -62,19 +62,19 @@ def main():
       messages.extend(response['messages'])
 
     for message in messages:
-       #print(message['id'])
-        completeMessage = service.users().messages().get(userId='me', id = message['id']).execute()
-       # print(completeMessage['snippet']) # Prints the sippet !
-        headers = completeMessage['payload']['headers']
+       print(message['id'])
+       completeMessage = service.users().messages().get(userId='me', id = message[0]['id'])
+       print(completeMessage['snippet']) # Prints the sippet !
+        #headers = completeMessage['payload']['headers']
         #print (headers)
         # filter through the array to find where name == subject:
-        snippet = completeMessage['snippet']
+        #snippet = completeMessage['snippet']
         # Lambda iterates through the array
-        subject = list(filter(lambda h: h['name']=='Subject',headers))[0]['value']
-        massageTo = list(filter(lambda h: h['name']=='To',headers))[0]['value']
-        messageFrom = list(filter(lambda h: h['name']=='From',headers))[0]['value']
+        #subject = list(filter(lambda h: h['name']=='Subject',headers))[0]['value']
+        #massageTo = list(filter(lambda h: h['name']=='To',headers))[0]['value']
+        #messageFrom = list(filter(lambda h: h['name']=='From',headers))[0]['value']
         # print (messageFrom)
-        print(subject) # prints all mesage subjects
+        #print(subject) # prints all mesage subjects
         # you can put this information into an excel spreadsheet here
         
 
